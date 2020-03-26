@@ -1,0 +1,68 @@
+<div class="container-fluid text-white">
+	<h1 align="center" class="display-1">Cart</h1>
+	<div class="row">
+		<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+			<h3 align="center">Items in Cart:</h3>
+			<div class="row my-4 shade offset-5 offset-sm-5 offset-md-5 offset-lg-5 offset-xl-5 col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 cart-item" *ngFor="let item of items">
+				<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+					<p></p>
+					<p align="center"><b>{{ item.name }}</b></p>
+					<p align="center">{{ item.price | currency }}</p>
+				</div>
+				<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
+					<img class="mw-100" width="100px" height="100px" src={{item.image}} alt="product">
+				</div>
+			</div>
+		</div>
+		<div class="row col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h3 class="delivery">Delivery:</h3>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+				<form class="mt-5" [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+					<div class="my-5">
+						<label for="name">
+							Name
+						</label>
+						<br>
+						<input id="name" type="text" formControlName="name">
+					</div>
+					<div class="my-5">
+						<label for="address">
+							Address
+						</label>
+						<br>
+						<input id="address" type="text" formControlName="address">
+					</div>
+					<div class="my-5">
+						<label for="postalCode">
+							Postal Code
+						</label>
+						<br>
+						<input id="postalCode" type="text" formControlName="postalCode">
+					</div>
+					<div class="my-5">
+						<label for="city">
+							City
+						</label>
+						<br>
+						<input id="city" type="text" formControlName="city">
+					</div>
+					<div class="my-5">
+						<label for="country">Country</label><br>
+						<span>
+							<select id="country" name="country" formControlName="country">
+								<option value="Austria">Austria</option>
+								<option value="Germany">Germany</option>
+								<option value="Swizerland">Swizerland</option>
+							</select>
+						</span>
+						<div class="my-5">
+							<button class="button" type="submit">Purchase</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #000;
+  position: relative;
+}
+
+/* ---- grid ---- */
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid {
+  margin: 1vw 1vh;
+  margin-bottom: 5rem;
+}
+/* ---- grid-item ---- */
+.grid-sizer,
+.grid-item {
+  width: 25%;
+}
+
+.grid-item {
+  height: 200px;
+  float: left;
+  background-color: #F4F3F4;
+  border: 4px solid #000;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.35s ease-in-out;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+}
+
+.grid-alpha {
+  display: none;
+  position: absolute;
+  background-color: #F4F3F4;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+} 
+
+.grid-alpha:hover {
+  cursor: zoom-out;
+}
+
+.grid-item.item-opened {
+  width: 80%;
+  height: 80vw;
+  border: 3px solid #e8e8e8;
+  -webkit-filter: grayscale(0%) blur(0);
+}
+
+.grid-item--width2 {
+  width: 50%;
+}
+
+.grid-item--height2 {
+  height: 400px;
+}
+
+.grid-item--height3 {
+  height: 600px;
+}
+
+@media only screen and (max-width: 580px) {
+  .grid-item {
+    width: 50%;
+  }
+
+  .grid-item--width2 {
+    width: 100%;
+  }
+}
+.grid-item:nth-child(1) {
+  background-image: url(/assets/Nature/nature3.jpg);
+}
+
+
+.grid-item:nth-child(2) {
+  background-image: url(/assets/City/city4.jpg);
+}
+
+.grid-item:nth-child(3) {
+  background-image: url(/assets/Wedding/wedding3.jpg);
+}
+
+.grid-item:nth-child(4) {
+  background-image: url(/assets/Nature/nature4.jpg);
+}
+
+.grid-item:nth-child(5) {
+  background-image: url(/assets/Galaxies/galaxy2.jpg);
+}
+
+.grid-item:nth-child(6) {
+  background-image: url(/assets/Galaxies/galaxy3.jpg);
+}
+
+.grid-item:nth-child(7) {
+  background-image: url(/assets/Nature/nature5.jpg);
+}
+
+.grid-item:nth-child(8) {
+  background-image: url(/assets/Nature/nature2.jpg);
+}
+
+.grid-item:nth-child(9) {
+  background-image: url(/assets/People/people1.jpg);
+}
+
+
+.grid-item:nth-child(10) {
+  background-image: url(/assets/Nature/nature1.jpg);
+}
+
+
+.grid-item:nth-child(11) {
+  background-image: url(/assets/Nature/nature7.jpg);
+}
+
+.grid-item:nth-child(12) {
+  background-image: url(/assets/Nature/nature5.jpg);
+}
+.grid-item:nth-child(13) {
+  background-image: url(/assets/Nature/nature6.jpg);
+}
+
+.grid-item:nth-child(14) {
+  background-image: url(/assets/People/people2.jpg);
+}
+
+.grid-item:nth-child(15) {
+  background-image: url(/assets/People/people3.jpg);
+}
+  
+.grid-item:nth-child(16) {
+  background-image: url(/assets/People/people6.jpg);
+}
+
+.grid-item:nth-child(17) {
+  background-image: url(/assets/People/people7.jpg);
+}
+
+.grid-item:nth-child(18) {
+  background-image: url(/assets/Galaxies/galaxy1.jpg);
+}
+
+
+.grid-item:nth-child(19) {
+  background-image: url(/assets/Galaxies/galaxy4.jpg);
+}
+
+.grid-item:nth-child(20) {
+  background-image: url(/assets/Galaxies/galaxy7.jpg);
+}
+
+.grid-item:nth-child(21) {
+  background-image: url(/assets/City/city1.jpg);
+}
+.grid-item:nth-child(21) {
+  background-image: url(/assets/People/people4.jpg);
+}
+
+.grid-item:nth-child(22) {
+  background-image: url(/assets/Galaxies/galaxy5.jpg);
+}
+
+.grid-item:nth-child(23) {
+  background-image: url(/assets/Galaxies/galaxy6.jpg);
+}
+
+
+.grid-item:nth-child(24) {
+  background-image: url(/assets/People/people5.jpg);
+}
+
+.grid-item:nth-child(25) {
+  background-image: url(/assets/Wedding/wedding4.jpg);
+}
+
+.grid-item:nth-child(26) {
+  background-image: url(/assets/Wedding/wedding5.jpg);
+}
+
+.grid-item:nth-child(27) {
+  background-image: url(/assets/City/city2.jpg);
+}
+
+
+.grid-item:nth-child(28) {
+  background-image: url(/assets/City/city5.jpg);
+}
+
+.grid-item:nth-child(29) {
+  background-image: url(/assets/City/city6.jpg);
+}
+
+.grid-item:nth-child(30) {
+  background-image: url(/assets/City/city7.jpg);
+}
+
+.grid-item:nth-child(31) {
+  background-image: url(/assets/Wedding/wedding1.jpg);
+}
+
+.grid-item:nth-child(32) {
+  background-image: url(/assets/Wedding/wedding2.jpg);
+}
+.grid-item:nth-child(33) {
+  background-image: url(/assets/City/city3.jpg);
+}
+
+
+.grid-item:nth-child(34) {
+  background-image: url("https://unsplash.it/900/900?image=137");
+}
+
+.grid-item:nth-child(35) {
+  background-image: url("https://unsplash.it/900/900?image=138");
+}
+
+.grid-item:nth-child(36) {
+  background-image: url("https://unsplash.it/900/900?image=139");
+}
+
+.grid-item:nth-child(37) {
+  background-image: url(/assets/Wedding/wedding6.jpg);
+}
+
+.grid-item:nth-child(38) {
+  background-image: url(/assets/Wedding/wedding7.jpg);
+}
+.grid-item:nth-child(39) {
+  background-image: url("https://unsplash.it/900/900?image=140");
+}
+.largepic {
+  width: 100%;
+  height: 100%;
+}

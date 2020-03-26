@@ -1,0 +1,46 @@
+a{
+    color: white;
+    font-size: 1rem;
+}
+
+i{
+    margin-right:1rem;
+}
+
+#lab_social_icon_footer {
+    padding: 20px 0;
+    background-color:#000000;
+  }
+  #lab_social_icon_footer a {
+    color: #ffffff;
+  }
+  #lab_social_icon_footer .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  #lab_social_icon_footer .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+  #lab_social_icon_footer #social-fb:hover {
+    color: #3B5998;
+  }
+  #lab_social_icon_footer #social-tw:hover {
+    color: #4099FF;
+  }
+  #lab_social_icon_footer #social-sn:hover {
+    color: #FFFC00;
+  }
+  #lab_social_icon_footer #social-in:hover {
+  background: radial-gradient(circle at 30% 107%, #FDF497 0%, #FDF497 5%, #FD5949 45%, #D6249F 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

@@ -1,0 +1,29 @@
+<div class="text-white container">
+	<div class="d-flex justify-content-center">
+		<div class="row" *ngIf="product">
+			<div class="row col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center my-1 bg-white text-dark">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center my-1">
+					<h1>Product Details</h1>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center my-1">
+					<h3>Name: {{ product.name }}</h3>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center my-1">
+					<h4>Price: {{ product.price | currency }}</h4>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center my-1">
+					<button class="btn btn-outline-dark my-2" (click)="addToCart(product)">Buy</button>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center my-1">
+					<button class="btn btn-secondary active bg-dark" routerLink="/product-list">Go Back to Shop</button>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center my-1">
+					<button class="btn btn-outline-dark my-2" type="submit" routerLink="/cart">Checkout</button>
+				</div>
+			</div>
+			<div class="bg-white col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center my-1">
+				<p><img class="mw-100" src={{product.image}} alt=""></p>
+			</div>
+		</div>
+	</div>
+</div>

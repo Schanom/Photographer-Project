@@ -1,0 +1,13 @@
+.container-fluid {
+	margin-top: 5rem;
+}
+.row {
+	margin-bottom: 10rem;
+}
+.productName {
+	text-align: center;
+}
+
+.decoration {
+	text-decoration: none;
+}

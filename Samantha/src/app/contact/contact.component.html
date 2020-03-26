@@ -1,0 +1,103 @@
+<div class="boxy"></div>
+
+<div class="row">
+	<div class="col-12 col-md-5 col-lg-4">
+		<nav class="tab">
+		  	<div class="nav nav-tabs" id="nav-tab" role="tablist">
+		    	<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">My contacts</a>
+		    	<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Leave feedback</a>
+		 	</div>
+		</nav>
+		<div class="tab tab-content text-white" id="nav-tabContent">
+		  	<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+		  		<div class="pl-4 bg contactbox text-shadow">
+		  			<h2 class="text-center grey">My Contacts</h2>
+					<div class="py-3">
+						<i class="fas fa-envelope-open-text"></i>
+						<p class="pl-4 d-inline">sam_gades@index.com</p>
+					</div>
+				    <div class="py-3 pl-2">
+				    	<i class="fas fa-mobile"></i>
+				    	<p class="pl-4 d-inline">+412344567890</p>
+				    </div>
+				    <div class="text-center center-block">
+		                   <a href="#"><i id="social-fb" class="fab fa-facebook fa-3x social"></i></a>
+		                  <a href="#"><i id="social-tw" class="fab fa-twitter fa-3x social"></i></a>
+		                  <a href="#"><i id="social-sn" class="fab fa-snapchat fa-3x social"></i></a>
+		                  <a href="#"><i id="social-in" class="fab fa-instagram fa-3x social" aria-hidden="true"></i></a>
+		        	</div>
+			    </div>
+
+		  	</div>
+		  	<div class="tab-pane fade bg" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+		  			<h2 class="text-center grey">Leave Feedback</h2>
+			  		<form [formGroup]="contactForm" (ngSubmit)="contactFunction()" id="myForm">	
+						<label class="d-block">
+							<input class="pl-2" type="text" formControlName="name" placeholder="Your name:">
+						</label>
+						<label class="d-block">
+							<input class="pl-2" type="text" formControlName="phone" placeholder="Phone:">
+						</label>
+						<label class="d-block">
+							<input class="pl-2" type="email" formControlName="email" placeholder="E-mail">
+						</label>
+						<label class="d-block">
+							<input class="pl-2" type="text" formControlName="img" placeholder="Your userpic URL">
+						</label>
+						<label class="d-block">
+							<input class="pl-2" id="comm" type="text" formControlName="comment" placeholder="Your comment">
+						</label>
+					</form>		
+				
+						 <input type="submit" value="Submit" class="btn btn-primary text-white ml-3 mt-3 col-5 col-lg-3" (click)="contactFunction()" placeholder="Send">
+
+		  	</div>
+		</div>
+	</div>
+
+<!-- Testimolians -->
+	<div id="testimon" class="col-12 col-md-7 col-lg-8" >
+
+		<div class="cd-testimonials-wrapper cd-container border-top border-light">
+		  <ul class="cd-testimonials">
+		    <li>
+		      <p>That´s terrible! I wanted to have the cool fotosession on beach, but instead the Sam has made the photos of my hat and the see! They are cool, but I am not! I protest!</p>
+		      <div class="cd-author">
+		        <img src="https://cdn.pixabay.com/photo/2015/10/13/03/39/fashion-985556_960_720.jpg" alt="Author image">
+		        <ul class="cd-author-info">
+		          <li>Sandy Hat</li>
+		        </ul>
+		      </div>
+		    </li>
+		  </ul>
+		</div>
+
+		<div class="cd-testimonials-wrapper cd-container border-top border-light">
+		  <ul class="cd-testimonials">
+		    <li>
+		      <p>I wanted the photo of me while working and this photographer made the photos of my hands! Don´t hire this human!</p>
+		      <div class="cd-author">
+		        <img src="https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_960_720.jpg" alt="Author image">
+		        <ul class="cd-author-info">
+		          <li>Eddie Saw</li>
+		        </ul>
+		      </div>
+		    </li>
+		  </ul>
+		</div>
+
+		<div class="cd-testimonials-wrapper cd-container border-top border-light">
+		  <ul class="cd-testimonials">
+		    <li>
+		      <p>I´m hundred years old and on the photos I look like an old man. Sam told he´ll make ideal photoes of me, but it looks like shit. I´m disappointed.</p>
+		      <div class="cd-author">
+		        <img src="https://cdn.pixabay.com/photo/2017/12/31/15/56/portrait-3052641__340.jpg" alt="Author image">
+		        <ul class="cd-author-info">
+		          <li>Charles Windsor</li>
+		        </ul>
+		      </div>
+		    </li>
+		  </ul>
+		</div>
+	</div>
+</div>

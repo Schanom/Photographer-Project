@@ -1,0 +1,8 @@
+.container-fluid {
+	margin-top: 8rem;
+}
+
+.shade{
+	box-shadow: 1px 1px 15px white;
+	border-radius: 25px;
+}
